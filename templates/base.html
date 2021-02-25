@@ -10,11 +10,36 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
 
-    <title>{& block title &} {% endblock%}</title>
+    <title>{% block title %} {% endblock %}</title>
 </head>
 
 <body>
-    {& block content &}
+
+
+<!-- Navbar (All pages)-->
+
+    <nav class="navbar navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand">Nyhetsvy</a>
+            <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+<!-- Card container on all pages -->
+    <div class="container">
+<!-- Hero image (On all apps but different content/picture) -->
+
+    <header>
+        <div class="container-fluid">
+
+        </div>
+    </header>
+
+</div>
+    
+    {% block content %}
     {% endblock%}
 
     <!-- Optional JavaScript; choose one of the two! -->
@@ -29,7 +54,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js"
         integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG"
         crossorigin="anonymous"></script>
-   
+
 </body>
 
 </html>
