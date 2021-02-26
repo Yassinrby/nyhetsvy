@@ -23,3 +23,7 @@ body {
 .feed-header {
     margin: 10px;
 }
+
+.post-card {
+    margin: 15px 0;
+}
