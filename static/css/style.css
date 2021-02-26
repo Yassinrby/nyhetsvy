@@ -3,6 +3,7 @@
 body {
     height: 100%;
     width: 100%;
+    background-color: gray;
 }
 
 
@@ -17,4 +18,8 @@ body {
 
 .jumbo-text {
     padding-top: 15px;
+}
+
+.feed-header {
+    margin: 10px;
 }
