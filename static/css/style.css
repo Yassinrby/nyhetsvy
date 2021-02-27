@@ -6,6 +6,9 @@ body {
     background-color: gray;
 }
 
+hr {
+    margin: 25px 0;
+}
 
 .jumbotron {
     background: url('/media/heroimg.jpg') no-repeat center center fixed;
@@ -13,7 +16,7 @@ body {
     height: 250px;
     color: #555;
     font-family: 'Lato';
-    margin: 15px 0;
+    
 }
 
 .jumbo-text {

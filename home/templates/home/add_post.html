@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+
+{% block content %}
+
+<h1> Add post </h1>
+
+<form action="add_post/" method="POST">
+    {{form}}
+    <button type="submit" name="save">Submit</button>
+</form>
+{% endblock %}
